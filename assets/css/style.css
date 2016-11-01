@@ -1,0 +1,459 @@
+/* generic element styles */
+
+html, body {
+	height: 100%; /* ensures we have someplace to display a background image */
+}
+
+h1 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+}
+
+h3 {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 14px;
+	text-align: left;
+}
+
+a {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+/* site style classes */
+
+/*                                        */
+/* styles for the main header classes     */
+/*                                        */
+/* the main header container */
+.mainHeader { 
+	height: 60px;
+	width: 70%;
+	margin-left: 15%;
+	background-color: #ffffff;
+	border-bottom: thin solid #cccccc;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+/* dummy header placeholder for layout purposes */
+.headerDummy {
+	clear: both;
+	height: 60px;
+	width: 70%;
+	margin-left: 15%;
+	border-bottom: thin solid;
+}
+/* header name field */
+.mainName {
+	height: 45px;
+	width: 20%;
+	min-width: 225px;
+	padding-top: 15px;
+	float: left;
+	position: relative;
+	left: 10%;
+	background-color: #4aaaa5;
+	color: #ffffff;
+}
+/* header nav menu container */
+.mainNavMenu {
+	width: 30%;
+	min-width: 250px;
+	height: 35px;
+	padding-top: 25px;
+	position: relative;
+	float: right;
+}
+/* header nav menu link */
+.menuLink {
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 14px;
+	color: #777777;
+}
+
+/*                                        */
+/* styles for the main content classes     */
+/*                                        */
+/* the main content container */
+.mainContent {
+	width: 70%;
+	min-height: 100%;
+	margin-left: 15%;
+	padding-top: 30px;
+	clear: both;
+	background-color: #ffffff;
+	background-image: url("../images/cork-wallet.png");
+}
+/* the page specific content container */
+.contentElements {
+	width: 45%;
+	min-height: 100%;
+	margin-left: 10%;
+	padding: 30px 30px 0px 30px;
+	float: left;
+	position: relative;
+	background-color: #ffffff;
+}
+.contentElementsDummy {
+	width: 1px;
+	min-height: 100%;
+}
+/* the page specific content header */
+.contentHeader {
+	height: 40px;
+	border-bottom: thin solid #cccccc;
+	color: #4aaaa5;
+}
+/* About page specific content container */
+.contentBio {
+	margin-top: 15px;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+}
+/* Image for About page content */
+.imgBio {
+	width: 40%;
+	max-width: 250px;
+	height: auto;
+	margin-right: 20px;
+	margin-bottom: 5px;
+	float: left;
+}
+/* placeholder to give some dimensions to work with */
+.imgBioDummy {
+	width: 1px;
+	height: auto;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+/* Text formatting for About page content section */
+.textBio {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 14px;
+	color: #777777;
+	line-height: 1.5;
+}
+/* Portfolio page specific content container */
+.contentPortfolio {
+	height: 100%;
+}
+/* Individual Portfolio item page specific content container */
+.portfolioPlaceholder {
+	height: 180px;
+	width: 45%;
+	margin-top: 20px;
+	margin-left: 2%;
+	margin-right: 2%;
+	display: inline-block;
+}
+/* Portfolio item image */
+.portfolioImage {
+	height: auto;
+	width: 100%;
+	float: left;
+}
+/* Text label associated with Portfolio item images */
+.portfolioLabel {
+	height: 10%;
+	width: 100%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	float: left;
+	position: relative;
+	top: -50px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-size: 14px;
+	text-align: center;
+	background-color: #4aaaa5;
+	color: #ffffff;
+}
+
+
+/* Contact page specific content container (form block) */
+.formContact {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+/* Contact page specific input field container */
+.inputBlock {
+	width: 100%;
+}
+/* Contact page specific input field label */
+.inputLabel {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	width: 100%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	color: #777777;
+}
+/* Contact page specific single line input field */
+.inputFieldShort {
+	height: 20px;
+	width: 100%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 12px;
+	color: #777777;
+}
+/* Contact page specific multiple line input field */
+.inputFieldLong {
+	height: 250px;
+	width: 100%;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 12px;
+	color: #777777;
+}
+/* Contact page specific form element button */
+.buttonContact {
+	margin-top: 10px;
+	padding: 8px 30px 8px 30px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #4aaaa5;
+	color: #ffffff;
+}
+
+/*                                        */
+/* styles for the connect with me classes     */
+/*                                        */
+/* the main connect with me container */
+.connect {
+	width: 15%;
+	min-width: 175px;
+	margin-left: 5%;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	float: left;
+	background-color: #ffffff;
+	color: #4aaaa5;
+}
+/* the connect with me header */
+.headerConnect {
+	margin-bottom: 10px;
+	padding-top: 15px;
+	text-align: center;
+}
+/* the connect with me icon container */
+.iconbarConnect {
+	text-align: center;
+	border-top: thin solid #cccccc;
+	padding-top: 10px;
+}
+/* a connect with me icon */
+.iconConnect {
+	height: 40px;
+	width: 40px;
+}
+
+/*                                        */
+/* styles for the main footer classes     */
+/*                                        */
+/* the main footer container */
+.mainFooter {
+	clear: both;
+	height: 45px;
+	width: 70%;
+	padding-top: 35px;
+	margin-left: 15%;
+	position: fixed;
+	bottom: 0;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #ffffff;
+	background-color: #666666;
+	border-top: 4px solid #4aaaa5;
+}
+.footerDummy {
+	height: 49px;
+	width: 70%;
+	padding-top: 35px;
+	margin-left: 15%;
+	background-image: url("../images/cork-wallet.png");
+}
+/*  to control dummy elements layout impact as layouts change */
+.dummy {
+	display: block;
+	visibility: hidden;
+}
+.dummy.footerDummy {
+	visibility: visible;
+}
+.scrollable {
+	position: static;
+}
+.hidden {
+	visibility: hidden;
+}
+
+/*                                        */
+/* media query mods                       */
+/*                                        */
+@media screen and (max-width: 980px) {
+	.mainHeader {
+		width: 100%;
+		margin-left: 0;
+	}
+	.mainContent {
+		width: 100%;
+		height: auto;
+		margin-left: 0;
+		/* this is a kludge to force this element to grow when the child contentElements grows */
+		padding-bottom: 700px;
+	}
+    .contentElements {
+    	width: 35%;
+    }
+    .contentHeader {
+    	height: 35px;
+    }
+    .contentBio {
+    	margin-top: 0;
+    	padding-right: 0;
+    }
+    .imgBio {
+    	width: 100%;
+    	margin-right: 0;
+    	margin-bottom: 15px;
+    	float: none;
+    }
+    .textBio {
+    	font-size: 14px;
+    }
+    .portfolioPlaceholder {
+    	width: 100%;
+    	margin-left: 0;
+    	display: block;
+}
+    .connect {
+		min-width: 175px;
+    }
+    .mainFooter {
+		width: 100%;
+		margin-left: 0;
+    }
+    .footerDummy {
+		width: 100%;
+		margin-left: 0;
+       }
+    .dummy.imgBioDummy {
+		display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+	.mainHeader {
+		position: static;
+	}
+	.headerDummy {
+		display: none;
+	}
+	.mainName {
+		left: 3%;
+	}
+	.mainContent {
+		padding-bottom: 200px;
+	}
+    .contentElements {
+    	width: 87%;
+    	margin-left: 3%;
+    }
+    .imgBio {
+    	width: 100%;
+    	margin-right: 20px;
+    	margin-bottom: 15px;
+    	float: left;
+    }
+    .contentPortfolio {
+    	width: 100%;
+    	min-height: 670px;
+    }
+    .portfolioPlaceholder {
+		width: 46%;
+		margin-top: 20px;
+		margin-right: 3%;
+		margin-bottom: 20px;
+		display: inline-block;
+    }
+    .connect {
+    	width: 91%;
+    	margin-top: 30px;
+    	margin-left: 3%;
+    }
+    .headerConnect {
+		text-align: left;
+    }
+    .iconbarConnect {
+		text-align: left;
+    }
+    .mainFooter {
+		position: static;
+		display: block;
+	}
+	.footerDummy {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	.mainName {
+		width: 100%;
+		left: 0;
+		float: none;
+		position: static;
+	}
+	.mainNavMenu {
+		width: 100%;
+		height: 35px;
+		padding-top: 25px;
+		margin-left: 10%;
+		left: 10%;
+	}
+	.menuLink {
+		margin-left: 10%;
+		margin-right: 10%;
+		font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+		font-size: 14px;
+		color: #777777;
+	}
+	.mainContent {
+		padding-bottom: 1600px;
+	}
+    .contentElements {
+    	width: 85%;
+    }
+    .imgBio {
+		max-width: 600px;
+    	margin-right: 0;
+    	float: none;
+    }
+    .portfolioPlaceholder {
+    	width: 100%;
+    	margin-left: 0;
+    	display: block;
+}
+	.portfolioLabel {
+		top: -80px;
+		font-family: 'Georgia', Times, 'Times New Roman', serif;
+		font-size: 18px;
+	}
+    .connect {
+    	width: 90%;
+    	margin-top: 30px;
+    	margin-left: 3%;
+    }
+}
